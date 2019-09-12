@@ -26,3 +26,15 @@
     margin: 0;
     padding: 0;
   }
+
+  #home{
+    justify-content: flex-start;
+  }
+   
+  #contact{
+    justify-content: center;
+  }
+  
+  #gallery{
+    justify-content: flex-end;
+  }
