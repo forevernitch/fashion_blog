@@ -1,36 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 * {
-  border: 1px red solid;
+  border: 1px purple solid;
   color: white;
   margin: 0;
   padding: 0;
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 html {
-  background-color: black;
+  background-color: #585858;
 }
 
 header nav {
   position: absolute;
   z-index: 2;
-  left: %;
+  left: 75%;
   top: 1.5%;
-  width: 100%;
-  text-align: right;
-
 }
 header nav ul {
-  text-align: right;
+  text-align: center;
   display: flex;
-  justify-content: flex-end;
-
 }
 header nav ul li {
-  text-align: right;
-  font-size: 20px;
+  justify-content: space-around;
+  font-size: 1.5vw;
   list-style-type: none;
   padding: 0 5px;
   text-transform: uppercase;
@@ -39,26 +36,17 @@ header nav ul li {
 li a {
   text-decoration: none;
 }
-footer{
-  position: absolute;
-  z-index: 4;
-  top: 150%;
-  width: 100%;
-}
 
 .container {
-  position: absolute;
   z-index: 3;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  bottom: 100px;
-  width: 100%;
+  bottom: 20px;
   justify-content: center;
-  top: 75%;  
 }
+
 .card {
-  font-family: "Ariel";
   font-size: 13px;
   display: flex;
   flex-wrap: wrap;
@@ -67,20 +55,29 @@ footer{
   align-items: stretch;
   background: white;
   display: flex;
-  margin: 1.5%;
-  border: 5px solid black;
-  outline: 3px solid white;
+  margin: 50px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  transition: 0.3s;
+  overflow: hidden;
+
+}
+.card:hover{
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,1);
+  pointer
+}
+.card_style{
+  width: 300px;
+  background: transparent;
 }
 
 .card img {
   width: 100%;
   height: 40%;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
 }
 
 .card h1 a,
-p, p a {
+p,
+p a {
   color: black;
   height: 50%;
 }
@@ -88,7 +85,7 @@ p, p a {
 .card h1 {
   height: 10%;
   text-transform: uppercase;
-  font-size: 1.5vw;
+  font-size: 20px;
 }
 
 #heading_text {
@@ -106,9 +103,10 @@ p, p a {
 }
 
 #banner {
-  z-index: 0;
+  -webkit-user-drag: none;
   position: relative;
   width: 100%;
+  height: 400px;
   margin: 0;
   padding: 0;
   filter: blur(2px);
