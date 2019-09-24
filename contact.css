@@ -1,0 +1,85 @@
+/*This handles the styling and layout of the contact page*/
+
+
+/*Refers to the overall elements styling*/
+* {
+    border: 1px purple solid;
+    color: white;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+  html {
+    background-color: #585858;
+  }
+  header nav {
+    position: absolute;
+    z-index: 2;
+    left: 75%;
+    top: 1.5%;
+  }
+  header nav ul {
+    text-align: center;
+    display: flex;
+  }
+  header nav ul li {
+    justify-content: space-around;
+    font-size: 1.5vw;
+    list-style-type: none;
+    padding: 0 5px;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  }
+  li a {
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Represent the individual IDs*/
+  #heading_text {
+    position: absolute;
+    z-index: 2;
+    background: transparent;
+    width: 50%;
+    left: 20%;
+    color: white;
+    font-size: 8vw;
+    top: 10%;
+    border: 2px solid white;
+    padding: 5%;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  #banner {
+    -webkit-user-drag: none;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -webkit-mask-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 1)),
+      to(rgba(0, 0, 0, 0))
+    );
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
